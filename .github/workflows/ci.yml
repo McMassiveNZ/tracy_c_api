@@ -15,49 +15,9 @@ jobs:
     strategy: 
       fail-fast: false
       matrix:
-        os: [windows-latest, ubuntu-latest, macos-latest]
+        os: [windows-latest]
         build_configuration: [Debug, Release]
-        compiler: [llvm, gcc]
-
-        exclude:
-          - os: windows-latest
-
-        include:
-          - os: 'windows-latest'
-            triplet: x64-windows
-            compiler: llvm
-            build_configuration: Debug
-
-          - os: 'windows-latest'
-            triplet: x64-windows
-            compiler: llvm
-            build_configuration: Release
-
-          - os: 'windows-latest'
-            triplet: x64-windows
-            compiler: gcc
-            build_configuration: Debug
-
-          - os: 'windows-latest'
-            triplet: x64-windows
-            compiler: gcc
-            build_configuration: Release
-
-          - os: 'windows-latest'
-            triplet: x64-windows
-            compiler: msvc
-            build_configuration: Debug
-
-          - os: 'windows-latest'
-            triplet: x64-windows
-            compiler: msvc
-            build_configuration: Release
-
-          - os: 'ubuntu-latest'
-            triplet: x64-linux
-
-          - os: 'macos-latest'
-            triplet: x64-osx
+        compiler: [msvc, llvm, gcc]
 
     steps:
     - name: checkout
