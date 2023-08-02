@@ -1,4 +1,4 @@
-# blank-slate
-[![build](https://github.com/McMassiveNZ/blank-slate/actions/workflows/ci.yml/badge.svg)](https://github.com/McMassiveNZ/blank-slate/actions/workflows/ci.yml)
+# tracy-c-api
+[![build](https://github.com/McMassiveNZ/tracy-c-api/actions/workflows/ci.yml/badge.svg)](https://github.com/McMassiveNZ/tracy-c-api/actions/workflows/ci.yml)
 
-A blank slate cpp project containing boilerplate for CMake, testing and basic CI
+A minimum working example to repro an issue I was having integrating Tracy using the C Api
